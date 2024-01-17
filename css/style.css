@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	position: relative;
+}
+
+menu {
+	font-size: 0;
+	/* truco por el uso de inline-block*/
+	list-style: none;
+}
+
+.menu li {
+	display: inline-block;
+	width: 9rem;
+	position: relative;
+	font-size: 2rem;
+}
+
+
+.primerlinea {
+    width: 8rem;
+}
+
+.img1 {
+    width: 50rem;
+}
+
+section {
+    padding: 5rem;
+}
+
+footer {
+    padding: 5rem;
+    text-align: center;
+}
