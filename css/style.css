@@ -3,37 +3,92 @@
 	padding: 0;
 }
 
-nav {
-	position: relative;
+/*  Estilos del header */
+
+img {
+	width: 8rem;
 }
 
-menu {
-	font-size: 0;
-	/* truco por el uso de inline-block*/
+/* Estilos del Nav*/
+.navbar-collapse {
+	justify-content: flex-end;
+}
+
+picture {
+	display: flex;
+	justify-content: center;
+}
+
+.navbar {
+	display: flex;
+	justify-content: center;
+}
+ul {
+	display: flex;
+	justify-content: flex-end;
+}
+
+li {
+	margin: 2rem;
 	list-style: none;
 }
 
-.menu li {
-	display: inline-block;
-	width: 9rem;
-	position: relative;
-	font-size: 2rem;
+a {
+	text-decoration: none;
+	color: black;
 }
 
-
-.primerlinea {
-    width: 8rem;
-}
-
-.img1 {
-    width: 50rem;
-}
-
+/*  Estilos de la sectioj principal */
 section {
-    padding: 5rem;
+	text-align: center;
 }
 
+h2 {
+	text-align: center;
+	margin: 1rem;
+}
+
+h2::after{
+	content: "";
+    display: block;
+    margin: auto;
+    border-top: 3px solid #00955e;
+    width: 140px;
+    margin-top: 15px;
+    margin-top: 45px;
+}
+
+h3 {
+	padding: 1rem;
+}
+
+p {
+	padding: 1rem;
+}
+
+
+/* Estilos Pagina Menu*/
+.row {
+	justify-content: center;
+	margin: 1rem;
+}
+
+.card {
+	margin: 1rem;
+}
+
+/*  Estilos del Footer  */
 footer {
-    padding: 5rem;
-    text-align: center;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	background-image: url(../Img/carrusel/imgFooter.png);
+	height: 150px;
+}
+
+.direccion {
+	background-color: aqua;
+	padding: 0.5rem, 0.5rem;
+	padding-left: 12px;
+	padding-right: 12px;
 }
