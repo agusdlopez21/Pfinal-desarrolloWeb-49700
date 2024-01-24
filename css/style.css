@@ -77,6 +77,11 @@ p {
 	margin: 1rem;
 }
 
+.slide img{
+	height: 100vh;
+	width: auto;
+}
+
 /*  Estilos del Footer  */
 footer {
 	display: flex;
