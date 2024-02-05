@@ -1,0 +1,68 @@
+/* Variables */
+@import "base/variables";
+@import "base/media";
+
+/* Importando los archivos sass */
+@import "components/nav";
+@import "components/header";
+@import "components/footer";
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Protest Revolution', sans-serif;
+}
+
+
+/*  Estilos de la sectioj principal */
+
+.carousel-item {
+	height: 80vh;
+	background-size: cover;
+  }
+section {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	margin: 1rem;
+}
+
+h2::after{
+	content: "";
+    display: block;
+    margin: auto;
+    border-top: 3px solid #00955e;
+    width: 140px;
+    margin-top: 15px;
+    margin-top: 45px;
+}
+
+h3 {
+	padding: 1rem;
+}
+
+p {
+	padding: 1rem;
+}
+
+
+/* Estilos Pagina Menu*/
+.row {
+	justify-content: center;
+	margin: 1rem;
+}
+
+.card {
+	margin: 1rem;
+}
+
+.slide img{
+	height: 100vh;
+	width: auto;
+}
+
+
