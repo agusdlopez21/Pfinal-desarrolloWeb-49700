@@ -1,12 +1,13 @@
 /* Variables */
-@import "base/generales";
 @import "base/variables";
+
+@import "base/generales";
 @import "base/mixins";
 @import "base/extend";
 
 /* Importando los archivos sass */
-@import "components/form";
 @import "components/footer";
+@import "components/form";
 
 
 /*  Estilos de la pagina home */

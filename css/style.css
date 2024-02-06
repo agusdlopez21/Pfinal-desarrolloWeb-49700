@@ -1,4 +1,5 @@
 /* Variables */
+/* Variables del formulario */
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +27,6 @@ h2::after {
   margin-top: 45px;
 }
 
-/* Variables del formulario */
 /* pagina reserva - formulario */
 .banner {
   min-height: 100vh;
@@ -53,6 +53,40 @@ form select, form input {
 }
 
 /* Importando los archivos sass */
+/*  Estilos del Footer  */
+.footer {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../../Img/imgFooter.png);
+  height: 200px;
+}
+
+.social-media {
+  padding-top: 1rem;
+}
+.social-media a {
+  padding-left: 1rem;
+}
+
+.direccion {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.direccion p {
+  background-color: aquamarine;
+  text-align: center;
+}
+
+.botonEmail {
+  padding-top: 1rem;
+}
+.botonEmail button {
+  width: 60px;
+  background-color: aqua;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: 420px 420px;
@@ -111,40 +145,6 @@ form input [type=submit]:hover {
     height: 330px;
   }
 }
-/*  Estilos del Footer  */
-.footer {
-  display: block;
-  justify-content: center;
-  text-align: center;
-  background-image: url(../../Img/imgFooter.png);
-  height: 200px;
-}
-
-.social-media {
-  padding-top: 1rem;
-}
-.social-media a {
-  padding-left: 1rem;
-}
-
-.direccion {
-  padding-top: 2rem;
-  display: flex;
-  justify-content: center;
-}
-.direccion p {
-  background-color: aquamarine;
-  text-align: center;
-}
-
-.botonEmail {
-  padding-top: 1rem;
-}
-.botonEmail button {
-  width: 60px;
-  background-color: aqua;
-}
-
 /*  Estilos de la pagina home */
 main {
   position: relative;
