@@ -175,28 +175,26 @@ p {
   background-size: cover;
 }
 
-.slider-box {
-  border: 5px solid;
+.slider-frame {
+  margin-top: 100px;
   width: 100%;
   height: auto;
-  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
 }
 
-.slider-box ul {
+.slider-frame ul {
   display: flex;
-  position: relative;
   padding: 0;
   width: 400%;
   animation: slide 20s infinite alternate ease-in-out;
 }
 
-.slider-box li {
+.slider-frame li {
   width: 100%;
   list-style: none;
-  position: relative;
 }
 
-.slider-box img {
+.slider-frame img {
   width: 100%;
 }
 
