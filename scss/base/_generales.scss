@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Protest Revolution', sans-serif;
+}
+
+/*  Estilos del header */
+.logo {
+	width: 8rem;
+}
+
+
+h2 {
+	text-align: center;
+	margin: 1rem;
+}
+
+h2::after{
+	content: "";
+    display: block;
+    margin: auto;
+    border-top: 3px solid #00955e;
+    width: 140px;
+    margin-top: 15px;
+    margin-top: 45px;
+}

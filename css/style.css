@@ -1,28 +1,122 @@
 /* Variables */
-/* Importando los archivos sass */
-nav div img {
-  left: 1rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Protest Revolution", sans-serif;
 }
 
 /*  Estilos del header */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-  background-color: #ececec;
-}
-
-img {
+.logo {
   width: 8rem;
 }
 
+h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  margin: auto;
+  border-top: 3px solid #00955e;
+  width: 140px;
+  margin-top: 15px;
+  margin-top: 45px;
+}
+
+/* Variables del formulario */
+/* pagina reserva - formulario */
+.banner {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Img/page-eventos/reunion.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+form select, form input {
+  display: block;
+  width: 100%;
+  margin: 15px 12px;
+  padding: 5px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #eee;
+  font-weight: 300;
+}
+
+/* Importando los archivos sass */
+.card-container {
+  display: grid;
+  grid-template-columns: 420px 420px;
+}
+
+.card-img {
+  background: url("../../Img/page-home/platoConCarne.png") center/cover no-repeat;
+}
+
+.banner h2 {
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+.card-content {
+  background: white;
+  height: 330px;
+}
+
+.card-content h3 {
+  text-align: center;
+  color: #000;
+  padding: 25px 0 10px 0;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.form-row {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+form input[type=text], form input[type=number], form input::placeholder, select {
+  color: #9a9a9a;
+}
+
+form input[typer=submit] {
+  color: #fff;
+  background: #f2745f;
+  padding: 12px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input [type=submit]:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 992px) {
+  .card-container {
+    grid-template-columns: 100%;
+    width: 100vw;
+  }
+  .card-img {
+    height: 330px;
+  }
+}
 /*  Estilos del Footer  */
 .footer {
   display: block;
   justify-content: center;
   text-align: center;
-  background-image: url(../../Img/carrusel/imgFooter.png);
+  background-image: url(../../Img/imgFooter.png);
   height: 200px;
 }
 
@@ -51,38 +145,22 @@ img {
   background-color: aqua;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Protest Revolution", sans-serif;
+/*  Estilos de la pagina home */
+main {
+  position: relative;
 }
 
-/*  Estilos de la sectioj principal */
-.carousel-item {
-  height: 80vh;
+.img-carousel1 {
+  width: 100%;
+  height: auto;
   background-size: cover;
 }
 
-section {
+.texto-home {
   text-align: center;
 }
 
-h2 {
-  text-align: center;
-  margin: 1rem;
-}
-
-h2::after {
-  content: "";
-  display: block;
-  margin: auto;
-  border-top: 3px solid #00955e;
-  width: 140px;
-  margin-top: 15px;
-  margin-top: 45px;
-}
-
+/* Estilos de contenido principal de pagino home */
 h3 {
   padding: 1rem;
 }
@@ -91,19 +169,62 @@ p {
   padding: 1rem;
 }
 
-/* Estilos Pagina Menu*/
-.row {
-  justify-content: center;
-  margin: 1rem;
+/* Estilos de pagina preguntas */
+.img1 {
+  width: 100vw;
+  background-size: cover;
 }
 
-.card {
-  margin: 1rem;
+.slider-box {
+  border: 5px solid;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
-.slide img {
-  height: 100vh;
-  width: auto;
+.slider-box ul {
+  display: flex;
+  position: relative;
+  padding: 0;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+
+.slider-box img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+/* pagina reserva - formulario */
+@mixin media-form {
+    @media(max-width: 992px) {
+        .card-container {
+            grid-template-columns: 100%;
+            width: 100vw;
+        }
+        .card-img {
+            height: 330px;
+        }
+    }
+}

@@ -1,46 +1,33 @@
 /* Variables */
+@import "base/generales";
 @import "base/variables";
-@import "base/media";
+@import "base/mixins";
+@import "base/extend";
 
 /* Importando los archivos sass */
-@import "components/nav";
-@import "components/header";
+@import "components/form";
 @import "components/footer";
 
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Protest Revolution', sans-serif;
+/*  Estilos de la pagina home */
+main {
+	position: relative;
 }
 
 
-/*  Estilos de la sectioj principal */
-
-.carousel-item {
-	height: 80vh;
+.img-carousel1 {
+	width: 100%;
+	height: auto;
 	background-size: cover;
-  }
-section {
+}
+
+
+.texto-home {
 	text-align: center;
 }
 
-h2 {
-	text-align: center;
-	margin: 1rem;
-}
 
-h2::after{
-	content: "";
-    display: block;
-    margin: auto;
-    border-top: 3px solid #00955e;
-    width: 140px;
-    margin-top: 15px;
-    margin-top: 45px;
-}
-
+/* Estilos de contenido principal de pagino home */
 h3 {
 	padding: 1rem;
 }
@@ -50,19 +37,50 @@ p {
 }
 
 
-/* Estilos Pagina Menu*/
-.row {
-	justify-content: center;
-	margin: 1rem;
-}
 
-.card {
-	margin: 1rem;
-}
 
-.slide img{
-	height: 100vh;
-	width: auto;
+/* Estilos de pagina preguntas */
+.img1 {
+	width: 100vw;
+	background-size: cover;
 }
 
 
+.slider-box {
+	border: 5px solid;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider-box ul {
+    display: flex;
+	position: relative;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-box img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
