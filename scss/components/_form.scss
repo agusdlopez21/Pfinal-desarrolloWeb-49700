@@ -1,13 +1,5 @@
 .banner {
-    /* @extend %banner-form; */
-    min-height: 100vh;
-    background: linear-gradient(rgba( 0, 0, 0, 0.5), rgba( 0, 0, 0, 0.5)), url("../../Img/page-eventos/reunion.jpg") center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    padding-bottom: 20px;
+    @extend %banner-form;
 }
 
 .card-container {
@@ -16,7 +8,7 @@
 }
 
 .card-img {
-    background: url("../../Img/page-home/plato-servido.jpg") center/cover no-repeat;
+    background: $img-form;
 }
 
 .banner h2 {
