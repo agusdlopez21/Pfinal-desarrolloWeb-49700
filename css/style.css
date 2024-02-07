@@ -1,71 +1,11 @@
 /* Variables */
 /* Variables del formulario */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Short Stack", cursive;
-}
-
-/*  Estilos del header */
-.logo {
-  width: 8rem;
-  margin-left: 2rem;
-}
-
-/* Estilos de los titulos h2 */
-h2 {
-  text-align: center;
-  margin: 1rem;
-}
-
-h2::after {
-  content: "";
-  display: block;
-  margin: auto;
-  border-top: 3px solid #00955e;
-  width: 140px;
-  margin-top: 15px;
-}
-
-/* pagina reserva - formulario */
-.banner {
-  min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Img/page-eventos/reunion.jpg") center/cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  padding-bottom: 20px;
-}
-
-form select, form input {
-  display: block;
-  width: 100%;
-  margin: 15px 12px;
-  padding: 5px;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid #eee;
-  font-weight: 300;
-}
-
-.eventos .bt-eventos, .direccion p {
-  background-color: #5bb982;
-  border: 2px solid green;
-  color: white;
-}
-
-/* Importando los archivos sass */
 /*  Estilos del Footer  */
-.footer {
+footer {
   display: block;
   justify-content: center;
   text-align: center;
-  background-image: url(../../Img/imgFooter.png);
+  background-image: url("../Img/imgFooter.png");
   height: 200px;
 }
 
@@ -95,7 +35,7 @@ form select, form input {
 }
 
 .card-img {
-  background: url("../../Img/page-home/plato-servido.jpg") center/cover no-repeat;
+  background: url("../Img/page-home/plato-servido.jpg") center/cover no-repeat;
 }
 
 .banner h2 {
@@ -147,6 +87,77 @@ form input [type=submit]:hover {
     height: 330px;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Short Stack", cursive;
+}
+
+/*  Estilos del header */
+.logo {
+  width: 8rem;
+  margin-left: 2rem;
+}
+
+/* Estilos de los titulos h2 */
+h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  margin: auto;
+  border-top: 3px solid #00955e;
+  width: 140px;
+  margin-top: 15px;
+}
+
+/* pagina reserva - formulario */
+/* @mixin media-forn {
+    @media(max-width: 992px) {
+        .card-container {
+            grid-template-columns: 100%;
+            width: 100vw;
+        }
+        .card-img {
+            height: 330px;
+        }
+    }
+} */
+.banner {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Img/page-eventos/reunion.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+form select, form input {
+  display: block;
+  width: 100%;
+  margin: 15px 12px;
+  padding: 5px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #eee;
+  font-weight: 300;
+}
+
+.eventos .bt-eventos, .direccion p {
+  background-color: #5bb982;
+  border: 2px solid green;
+  color: white;
+}
+
+/* Importando los archivos sass */
 /*  Estilos de la pagina home */
 main {
   position: relative;
