@@ -2,13 +2,16 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Protest Revolution', sans-serif;
+font-family: 'Short Stack', cursive;
 }
 
 /*  Estilos del header */
 .logo {
 	width: 8rem;
+    margin-left: 2rem;
 }
+
+/* Estilos de los titulos h2 */
 
 
 h2 {
@@ -23,5 +26,5 @@ h2::after{
     border-top: 3px solid #00955e;
     width: 140px;
     margin-top: 15px;
-    margin-top: 45px;
 }
+

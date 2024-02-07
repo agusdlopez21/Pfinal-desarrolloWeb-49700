@@ -10,3 +10,13 @@
         }
     }
 }
+
+@mixin h3-page-menu{
+    h3::after{
+        content: "";
+        display: block;
+        border-top: 3px solid #00955e;
+        width: 300px;
+        margin-top: 15px;
+    }
+}
